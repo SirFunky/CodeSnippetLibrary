@@ -240,6 +240,7 @@ describe("Persistence and library management", () => {
     expect(await blob!.text()).toBe(raw);
   });
   it("does not reseed an intentionally empty library", async () => {
+    await loadLibrary();
     localStorage.setItem("jsl.library.v1", "[]");
     expect((await loadLibrary()).files).toEqual([]);
   });

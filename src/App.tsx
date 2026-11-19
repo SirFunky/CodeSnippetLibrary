@@ -48,13 +48,30 @@ import {
   defaultPreferences,
   type Preferences,
   type Snippet,
+  type Language,
+  type SqlDialect,
+  type SqlKind,
 } from "./models/snippet";
+import {
+  languageNames,
+  minimumVersion,
+  importLines,
+  languageExtensions,
+  languageSymbols,
+  languageVersions,
+  sqlDialects,
+  sqlDialectNames,
+  sqlKindNames,
+  versionLabel,
+} from "./models/languages";
 import { indexLibrary, parseSnippet, withImports } from "./services/markdown";
 import * as storage from "./services/storage";
 import { categoryTree, createSearch } from "./search/search";
 import CodeView from "./components/CodeView";
 import Editor from "./components/Editor";
+import LanguageSections from "./components/LanguageSections";
 import { useModalFocus } from "./hooks/useModalFocus";
+import { version as appVersion } from "../package.json";
 function Mark({ text, query }: { text: string; query: string }) {
   const words = query.trim().split(/\s+/).filter(Boolean);
   if (!words.length) return <>{text}</>;
@@ -93,7 +110,7 @@ function categoryIcon(name: string) {
   return <Icon size={16} />;
 }
 export default function App() {
-  const [snippets, setSnippets] = useState<Snippet[]>([]),
+  const [allSnippets, setSnippets] = useState<Snippet[]>([]),
     [preferences, setPreferences] = useState<Preferences>(defaultPreferences),
     [ready, setReady] = useState(false),
     [loading, setLoading] = useState(true),
@@ -103,6 +120,8 @@ export default function App() {
   const [query, setQuery] = useState(""),
     [tag, setTag] = useState(""),
     [version, setVersion] = useState(""),
+    [sqlDialect, setSqlDialect] = useState<SqlDialect | "">(""),
+    [sqlKind, setSqlKind] = useState<SqlKind | "">(""),
     [selectedId, setSelectedId] = useState(""),
     [expanded, setExpanded] = useState<string[]>([
       "Collections",
@@ -112,6 +131,7 @@ export default function App() {
     [settings, setSettings] = useState(false),
     [menu, setMenu] = useState(false),
     [editor, setEditor] = useState<Snippet | null | undefined>(undefined),
+    [template, setTemplate] = useState<Snippet | null>(null),
     [deleting, setDeleting] = useState<Snippet | null>(null),
     [busy, setBusy] = useState(false),
     [tab, setTab] = useState<"code" | "imports">("code"),
@@ -123,6 +143,32 @@ export default function App() {
     prefsQueue = useRef(Promise.resolve()),
     refreshing = useRef(false),
     knownErrors = useRef("");
+  const language = preferences.language,
+    languageName = languageNames[language];
+  const snippets = useMemo(
+    () => allSnippets.filter((s) => s.language === language),
+    [allSnippets, language],
+  );
+  const versions = useMemo(
+    () =>
+      [
+        ...new Set([
+          ...languageVersions[language],
+          ...snippets
+            .filter(
+              (s) =>
+                language !== "sql" ||
+                (sqlDialect && s.sqlDialect === sqlDialect),
+            )
+            .map(minimumVersion),
+        ]),
+      ].sort((a, b) =>
+        language === "c"
+          ? languageVersions.c.indexOf(a) - languageVersions.c.indexOf(b)
+          : a.localeCompare(b, undefined, { numeric: true }),
+      ),
+    [snippets, language, sqlDialect],
+  );
   useModalFocus(
     editor !== undefined ||
       settings ||
@@ -214,6 +260,7 @@ export default function App() {
       tag,
       version,
       favorites: preferences.favorites,
+      ...(language === "sql" ? { sqlDialect, sqlKind } : {}),
     });
     return preferences.category === "recent"
       ? filtered
@@ -229,6 +276,9 @@ export default function App() {
     query,
     tag,
     version,
+    language,
+    sqlDialect,
+    sqlKind,
     preferences.category,
     preferences.favorites,
     preferences.recent,
@@ -284,9 +334,35 @@ export default function App() {
         : [...p.favorites, id],
     }));
   function chooseCategory(category: string) {
-    updatePrefs({ category });
+    setPreferences((p) => ({
+      ...p,
+      category,
+      categories: { ...p.categories, [p.language]: category },
+    }));
     setQuery("");
     setTag("");
+  }
+  function chooseLanguage(next: Language, category?: string) {
+    setPreferences((p) => ({
+      ...p,
+      language: next,
+      category: category ?? p.categories[next],
+      categories: {
+        ...p.categories,
+        [p.language]: p.category,
+        ...(category ? { [next]: category } : {}),
+      },
+    }));
+    setQuery("");
+    setTag("");
+    setVersion("");
+    setSelectedId("");
+    setMenu(false);
+    setTab("code");
+    setCopied("");
+    setSqlDialect("");
+    setSqlKind("");
+    if (resultsRef.current) resultsRef.current.scrollTop = 0;
   }
   async function copy(imports = false) {
     if (!selected) return;
@@ -296,12 +372,20 @@ export default function App() {
       setTimeout(() => setCopied(""), 1800);
       notify(
         imports
-          ? "Code and imports copied to clipboard"
+          ? `Code and ${language === "cpp" || language === "c" ? "headers" : "imports"} copied to clipboard`
           : "Code copied to clipboard",
       );
     } catch (e) {
       notify(`Copy failed: ${(e as Error).message}`);
     }
+  }
+  function clearFilters() {
+    setQuery("");
+    setTag("");
+    setVersion("");
+    setSqlDialect("");
+    setSqlKind("");
+    chooseCategory("all");
   }
   async function importFiles(files: FileList | null) {
     if (!files) return;
@@ -375,6 +459,8 @@ export default function App() {
     query ||
     tag ||
     version ||
+    sqlDialect ||
+    sqlKind ||
     preferences.category !== "all"
   );
   const sectionName =
@@ -401,9 +487,9 @@ export default function App() {
             <Code2 size={23} />
           </div>
           <span>
-            Java <strong>Snippet Library</strong>
+            Code <strong>Snippet Library</strong>
           </span>
-          <span className="version-label">v1.0</span>
+          <span className="version-label">v{appVersion}</span>
         </div>
         <div className="header-actions">
           <span className="local-badge">
@@ -449,6 +535,11 @@ export default function App() {
               )}
             </button>
           </div>
+          <LanguageSections
+            language={language}
+            snippets={allSnippets}
+            onChange={chooseLanguage}
+          />
           <nav>
             <button
               title="All snippets"
@@ -633,35 +724,70 @@ export default function App() {
                 ))}
               </select>
               <select
-                aria-label="Filter by Java version"
+                aria-label={
+                  language === "sql"
+                    ? "Filter by database version"
+                    : `Filter by ${languageName} version`
+                }
                 value={version}
+                disabled={language === "sql" && !sqlDialect}
                 onChange={(e) => setVersion(e.target.value)}
               >
-                <option value="">Any Java version</option>
-                {[8, 11, 17, 21, 25].map((v) => (
+                <option value="">
+                  {language === "sql"
+                    ? sqlDialect
+                      ? "Any database version"
+                      : "Choose a dialect first"
+                    : `Any ${languageName} version`}
+                </option>
+                {versions.map((v) => (
                   <option value={v} key={v}>
-                    Java {v} compatible
+                    {language === "sql" && sqlDialect
+                      ? sqlDialectNames[sqlDialect]
+                      : languageName}{" "}
+                    {v} compatible
                   </option>
                 ))}
               </select>
             </div>
           </div>
+          {language === "sql" && (
+            <div className="sql-filter-area">
+              <div className="filters">
+                <select
+                  aria-label="Filter by SQL dialect"
+                  value={sqlDialect}
+                  onChange={(e) => {
+                    setSqlDialect(e.target.value as SqlDialect | "");
+                    setVersion("");
+                  }}
+                >
+                  <option value="">All SQL dialects</option>
+                  {sqlDialects.map((value) => (
+                    <option key={value} value={value}>
+                      {sqlDialectNames[value]}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  aria-label="Filter by SQL type"
+                  value={sqlKind}
+                  onChange={(e) => setSqlKind(e.target.value as SqlKind | "")}
+                >
+                  <option value="">Queries & procedures</option>
+                  <option value="query">Queries</option>
+                  <option value="procedure">Stored procedures</option>
+                </select>
+              </div>
+            </div>
+          )}
           <div className="results-count">
             <span>
               {results.length} snippet{results.length === 1 ? "" : "s"}
               {query ? " found" : ""}
             </span>
             {activeFilters ? (
-              <button
-                onClick={() => {
-                  setQuery("");
-                  setTag("");
-                  setVersion("");
-                  chooseCategory("all");
-                }}
-              >
-                Clear filters
-              </button>
+              <button onClick={clearFilters}>Clear filters</button>
             ) : (
               <span className="sort-label">A — Z</span>
             )}
@@ -723,13 +849,23 @@ export default function App() {
                     {preferences.favorites.includes(s.id) && (
                       <Star size={13} className="star-filled" />
                     )}
-                    <span className="java-badge">{s.javaVersion}+</span>
+                    <span className="java-badge">{minimumVersion(s)}+</span>
                   </div>
                   <p>
                     <Mark text={s.description} query={query} />
                   </p>
                   <div className="result-meta">
-                    <span>{s.subcategory ?? s.category}</span>
+                    <span
+                      title={
+                        s.language === "sql"
+                          ? `${sqlDialectNames[s.sqlDialect!]} · ${sqlKindNames[s.sqlKind!]}`
+                          : (s.subcategory ?? s.category)
+                      }
+                    >
+                      {s.language === "sql"
+                        ? `${sqlDialectNames[s.sqlDialect!]} · ${sqlKindNames[s.sqlKind!]}`
+                        : (s.subcategory ?? s.category)}
+                    </span>
                     <div>
                       {s.tags.slice(0, 2).map((t) => (
                         <span className="tag" key={t}>
@@ -756,10 +892,7 @@ export default function App() {
                 <button
                   onClick={() => {
                     if (snippets.length) {
-                      setQuery("");
-                      setTag("");
-                      setVersion("");
-                      chooseCategory("all");
+                      clearFilters();
                     } else setEditor(null);
                   }}
                 >
@@ -844,12 +977,17 @@ export default function App() {
               <div className="preview-scroll">
                 <div className="snippet-heading">
                   <div className="snippet-kind">
-                    <span className="small-java">J</span> JAVA SNIPPET{" "}
+                    <span className="small-java">
+                      {languageSymbols[language]}
+                    </span>{" "}
+                    {languageName.toUpperCase()} SNIPPET{" "}
                     <span>
                       /
                       {selected.dependency
                         ? " EXTERNAL DEPENDENCY"
-                        : " STANDARD LIBRARY"}
+                        : selected.language === "sql"
+                          ? ` ${sqlDialectNames[selected.sqlDialect!]}`
+                          : " STANDARD LIBRARY"}
                     </span>
                   </div>
                   <h2>{selected.title}</h2>
@@ -857,8 +995,13 @@ export default function App() {
                   <div className="snippet-badges">
                     <span className="compatibility">
                       <span className="status-dot" />
-                      Java {selected.javaVersion}+
+                      {versionLabel(selected)}+
                     </span>
+                    {selected.language === "sql" && (
+                      <span className="tag">
+                        {sqlKindNames[selected.sqlKind!]}
+                      </span>
+                    )}
                     <span className="badge-separator" />
                     {selected.tags.map((t) => (
                       <button className="tag" key={t} onClick={() => setTag(t)}>
@@ -876,14 +1019,33 @@ export default function App() {
                     )}{" "}
                     {copied === "code" ? "Copied!" : "Copy code"}
                   </button>
-                  <button className="secondary" onClick={() => void copy(true)}>
-                    {copied === "imports" ? (
-                      <Check size={15} />
-                    ) : (
-                      <Copy size={15} />
-                    )}
-                    Copy with imports
-                  </button>
+                  {language !== "sql" && language !== "cobol" && (
+                    <button
+                      className="secondary"
+                      onClick={() => void copy(true)}
+                    >
+                      {copied === "imports" ? (
+                        <Check size={15} />
+                      ) : (
+                        <Copy size={15} />
+                      )}
+                      Copy with{" "}
+                      {language === "cpp" || language === "c"
+                        ? "headers"
+                        : "imports"}
+                    </button>
+                  )}
+                  {selected.tags.includes("starter-template") && (
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        setTemplate(selected);
+                        setEditor(null);
+                      }}
+                    >
+                      Use as template
+                    </button>
+                  )}
                   <button
                     className={`favorite-button ${preferences.favorites.includes(selected.id) ? "is-favorite" : ""}`}
                     title={
@@ -908,30 +1070,43 @@ export default function App() {
                       onClick={() => setTab("code")}
                     >
                       <Code2 size={14} />
-                      Snippet.java
+                      Snippet.{languageExtensions[selected.language]}
                     </button>
-                    <button
-                      className={tab === "imports" ? "active" : ""}
-                      onClick={() => setTab("imports")}
-                    >
-                      Imports <span>{selected.imports?.length ?? 0}</span>
-                    </button>
-                    <span className="code-language">JAVA</span>
+                    {language !== "sql" && language !== "cobol" && (
+                      <button
+                        className={tab === "imports" ? "active" : ""}
+                        onClick={() => setTab("imports")}
+                      >
+                        {language === "cpp" || language === "c"
+                          ? "Headers"
+                          : "Imports"}{" "}
+                        <span>{selected.imports?.length ?? 0}</span>
+                      </button>
+                    )}
+                    <span className="code-language">
+                      {languageName.toUpperCase()}
+                    </span>
                   </div>
                   {tab === "code" ? (
                     <CodeView
                       code={selected.code}
+                      language={selected.language}
                       fontSize={preferences.fontSize}
                     />
                   ) : selected.imports?.length ? (
                     <CodeView
-                      code={selected.imports
-                        .map((i) => `import ${i};`)
-                        .join("\n")}
+                      code={importLines(selected).join("\n")}
+                      language={selected.language}
                       fontSize={preferences.fontSize}
                     />
                   ) : (
-                    <p className="no-imports">This snippet needs no imports.</p>
+                    <p className="no-imports">
+                      This snippet needs no{" "}
+                      {language === "cpp" || language === "c"
+                        ? "headers"
+                        : "imports"}
+                      .
+                    </p>
                   )}
                   <div className="code-bottom">
                     <span>
@@ -941,7 +1116,7 @@ export default function App() {
                       lines
                     </span>
                     <span>
-                      UTF-8 <span>·</span> Java
+                      UTF-8 <span>·</span> {languageName}
                     </span>
                   </div>
                 </section>
@@ -954,6 +1129,7 @@ export default function App() {
                         <CodeView
                           key={i}
                           code={code}
+                          language={selected.language}
                           fontSize={preferences.fontSize}
                         />
                       ))}
@@ -982,9 +1158,41 @@ export default function App() {
                 <section className="detail-section requirements">
                   <h3>At a glance</h3>
                   <div>
-                    <span>Minimum version</span>
-                    <strong>Java {selected.javaVersion}</strong>
+                    <span>
+                      {language === "sql"
+                        ? "Database version"
+                        : "Minimum version"}
+                    </span>
+                    <strong>{versionLabel(selected)}</strong>
                   </div>
+                  {selected.language === "cobol" && (
+                    <div>
+                      <span>Source format</span>
+                      <strong>
+                        {selected.cobolFormat === "fixed"
+                          ? "Fixed (columns 7–72)"
+                          : "Free"}
+                      </strong>
+                    </div>
+                  )}
+                  {selected.language === "kotlin" && (
+                    <div>
+                      <span>JVM target</span>
+                      <strong>JVM {selected.jvmTarget}+</strong>
+                    </div>
+                  )}
+                  {selected.language === "csharp" && (
+                    <div>
+                      <span>.NET target</span>
+                      <strong>.NET {selected.dotnetVersion}+</strong>
+                    </div>
+                  )}
+                  {selected.language === "sql" && (
+                    <div>
+                      <span>SQL type</span>
+                      <strong>{sqlKindNames[selected.sqlKind!]}</strong>
+                    </div>
+                  )}
                   <div>
                     <span>Category</span>
                     <strong>
@@ -1001,14 +1209,13 @@ export default function App() {
                   <section className="detail-section">
                     <div className="section-label">RELATED SNIPPETS</div>
                     {selected.related?.map((id) => {
-                      const s = snippets.find((x) => x.id === id);
+                      const s = allSnippets.find((x) => x.id === id);
                       return s ? (
                         <button
                           className="related"
                           key={id}
                           onClick={() => {
-                            chooseCategory("all");
-                            setVersion("");
+                            chooseLanguage(s.language, "all");
                             setSelectedId(id);
                           }}
                         >
@@ -1029,7 +1236,7 @@ export default function App() {
           ) : (
             <div className="empty-state preview-empty">
               <Code2 size={42} />
-              <h2>A place for your best Java</h2>
+              <h2>A place for your best {languageName}</h2>
               <p>Select a snippet to see the details.</p>
             </div>
           )}
@@ -1056,7 +1263,7 @@ export default function App() {
           <span>
             <Command size={11} /> Ctrl K to search
           </span>
-          <span>Java Snippet Library</span>
+          <span>Code Snippet Library</span>
         </div>
       </footer>
       <input
@@ -1110,9 +1317,20 @@ export default function App() {
       )}
       {editor !== undefined && (
         <Editor
-          key={editor?.id ?? "new"}
+          key={editor?.id ?? template?.id ?? "new"}
           snippet={editor}
-          onClose={() => setEditor(undefined)}
+          template={template}
+          language={editor?.language ?? language}
+          sqlKind={
+            sqlKind === "procedure" ||
+            preferences.category.startsWith("Stored Procedures")
+              ? "procedure"
+              : "query"
+          }
+          onClose={() => {
+            setEditor(undefined);
+            setTemplate(null);
+          }}
           onSave={async (raw) => {
             const saved = parseSnippet(raw);
             await storage.saveSnippet(
@@ -1124,9 +1342,10 @@ export default function App() {
             setQuery("");
             setTag("");
             setVersion("");
-            updatePrefs({ category: "all" });
+            chooseLanguage(saved.language, "all");
             setSelectedId(saved.id);
             setEditor(undefined);
+            setTemplate(null);
             notify("Snippet saved to your library");
           }}
         />

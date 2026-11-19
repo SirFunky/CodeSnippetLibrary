@@ -5,7 +5,7 @@ test("browse, search, favorites, copy, edit, import, export and themes", async (
 }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto("/");
-  await expect(page.getByRole("listbox").getByRole("option")).toHaveCount(36);
+  await expect(page.getByRole("listbox").getByRole("option")).toHaveCount(43);
   await page.keyboard.press("Control+k");
   await page
     .getByRole("textbox", { name: "Search snippets" })
@@ -132,7 +132,7 @@ test("validates editor metadata, rejects duplicate imports and filters results",
     page.getByText("No matching snippets", { exact: true }),
   ).toBeVisible();
   await page.keyboard.press("Escape");
-  await expect(page.getByRole("listbox").getByRole("option")).toHaveCount(36);
+  await expect(page.getByRole("listbox").getByRole("option")).toHaveCount(43);
   await page.setViewportSize({ width: 960, height: 640 });
   await expect(
     page.getByRole("button", { name: "Copy code", exact: true }),

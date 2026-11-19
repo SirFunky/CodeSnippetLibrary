@@ -1,6 +1,10 @@
 import Fuse from "fuse.js";
-import type { Snippet } from "../models/snippet";
+import type { Snippet, Language, SqlDialect, SqlKind } from "../models/snippet";
+import { supportsVersion } from "../models/languages";
 export interface Filters {
+  sqlDialect?: SqlDialect | "";
+  sqlKind?: SqlKind | "";
+  language?: Language;
   category: string;
   tag: string;
   version: string;
@@ -13,6 +17,8 @@ export function createSearch(snippets: Snippet[]) {
       { name: "tags", weight: 4 },
       { name: "description", weight: 3 },
       { name: "category", weight: 2 },
+      { name: "sqlDialect", weight: 2 },
+      { name: "sqlKind", weight: 2 },
       { name: "blocks", weight: 1 },
     ],
     threshold: 0.4,
@@ -25,6 +31,9 @@ export function createSearch(snippets: Snippet[]) {
       : snippets;
     return results.filter(
       (s) =>
+        (!f.language || s.language === f.language) &&
+        (!f.sqlDialect || s.sqlDialect === f.sqlDialect) &&
+        (!f.sqlKind || s.sqlKind === f.sqlKind) &&
         (f.category === "all" ||
           f.category === "recent" ||
           (f.category === "favorites"
@@ -32,7 +41,9 @@ export function createSearch(snippets: Snippet[]) {
             : `${s.category}/${s.subcategory ?? ""}` === f.category ||
               s.category === f.category)) &&
         (!f.tag || s.tags.includes(f.tag)) &&
-        (!f.version || s.javaVersion <= Number(f.version)),
+        (!f.version ||
+          ((s.language !== "sql" || !!f.sqlDialect) &&
+            supportsVersion(s, f.version))),
     );
   };
 }

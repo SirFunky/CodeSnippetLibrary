@@ -1,0 +1,197 @@
+{
+  "extra-java-base64-text": {
+    "path": "ExtraSnippets/Extras/Data formats/extra-java-base64-text.md",
+    "language": "java",
+    "expected": "SGVsbG8=\nHello\ninvalid\n",
+    "setup": null
+  },
+  "extra-java-enum-lookup": {
+    "path": "ExtraSnippets/Extras/Validation/extra-java-enum-lookup.md",
+    "language": "java",
+    "expected": "PAID\nUNKNOWN\nUNKNOWN\n",
+    "setup": null
+  },
+  "extra-java-next-weekday": {
+    "path": "ExtraSnippets/Extras/Dates & Time/extra-java-next-weekday.md",
+    "language": "java",
+    "expected": "2026-11-23\n2026-11-24\n",
+    "setup": null
+  },
+  "extra-python-html-escape": {
+    "path": "ExtraSnippets/Python/Extras/Data formats/extra-python-html-escape.md",
+    "language": "python",
+    "expected": "&lt;label title=&quot;Ada &amp; Linus&quot;&gt;\n",
+    "setup": null
+  },
+  "extra-python-unicode-normalize": {
+    "path": "ExtraSnippets/Python/Extras/Strings/extra-python-unicode-normalize.md",
+    "language": "python",
+    "expected": "False\nTrue\n",
+    "setup": null
+  },
+  "extra-python-sorted-insert": {
+    "path": "ExtraSnippets/Python/Extras/Collections/extra-python-sorted-insert.md",
+    "language": "python",
+    "expected": "[1, 3, 3, 3, 7]\n1\n",
+    "setup": null
+  },
+  "extra-python-top-counts": {
+    "path": "ExtraSnippets/Python/Extras/Collections/extra-python-top-counts.md",
+    "language": "python",
+    "expected": "apple:2\npear:2\nplum:1\n",
+    "setup": null
+  },
+  "extra-csharp-sha256": {
+    "path": "ExtraSnippets/CSharp/Extras/Data formats/extra-csharp-sha256.md",
+    "language": "csharp",
+    "expected": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824\n",
+    "setup": null
+  },
+  "extra-csharp-utc-roundtrip": {
+    "path": "ExtraSnippets/CSharp/Extras/Dates & Time/extra-csharp-utc-roundtrip.md",
+    "language": "csharp",
+    "expected": "2026-11-19 12:30:00\n2\n",
+    "setup": null
+  },
+  "extra-csharp-case-insensitive-map": {
+    "path": "ExtraSnippets/CSharp/Extras/Collections/extra-csharp-case-insensitive-map.md",
+    "language": "csharp",
+    "expected": "dark\nmissing\n",
+    "setup": null
+  },
+  "extra-cpp-sort-records": {
+    "path": "ExtraSnippets/Cpp/Extras/Collections/extra-cpp-sort-records.md",
+    "language": "cpp",
+    "expected": "A:Ada:9\nA:Grace:5\nB:Linus:10\n",
+    "setup": null
+  },
+  "extra-cpp-little-endian": {
+    "path": "ExtraSnippets/Cpp/Extras/Data formats/extra-cpp-little-endian.md",
+    "language": "cpp",
+    "expected": "12345678\n",
+    "setup": null
+  },
+  "extra-c-overlap-copy": {
+    "path": "ExtraSnippets/C/Extras/Memory/extra-c-overlap-copy.md",
+    "language": "c",
+    "expected": "abdef\n",
+    "setup": null
+  },
+  "extra-c-checked-size-add": {
+    "path": "ExtraSnippets/C/Extras/Memory/extra-c-checked-size-add.md",
+    "language": "c",
+    "expected": "20\noverflow\n",
+    "setup": null
+  },
+  "extra-typescript-nonempty": {
+    "path": "ExtraSnippets/TypeScript/Extras/Validation/extra-typescript-nonempty.md",
+    "language": "typescript",
+    "expected": "Ada\nempty\n",
+    "setup": null
+  },
+  "extra-typescript-memoize": {
+    "path": "ExtraSnippets/TypeScript/Extras/Functions/extra-typescript-memoize.md",
+    "language": "typescript",
+    "expected": "36\n36\n1\n",
+    "setup": null
+  },
+  "extra-typescript-pick-fields": {
+    "path": "ExtraSnippets/TypeScript/Extras/Collections/extra-typescript-pick-fields.md",
+    "language": "typescript",
+    "expected": "{\"id\":7,\"name\":\"Ada\"}\n",
+    "setup": null
+  },
+  "extra-javascript-query-parameters": {
+    "path": "ExtraSnippets/JavaScript/Extras/Data formats/extra-javascript-query-parameters.md",
+    "language": "javascript",
+    "expected": "q=Ada+%26+Linus&page=2\n",
+    "setup": null
+  },
+  "extra-javascript-natural-sort": {
+    "path": "ExtraSnippets/JavaScript/Extras/Strings/extra-javascript-natural-sort.md",
+    "language": "javascript",
+    "expected": "file1,file2,file10\n",
+    "setup": null
+  },
+  "extra-javascript-flatten-stack": {
+    "path": "ExtraSnippets/JavaScript/Extras/Collections/extra-javascript-flatten-stack.md",
+    "language": "javascript",
+    "expected": "[1,2,3,4]\n",
+    "setup": null
+  },
+  "extra-javascript-redact-log": {
+    "path": "ExtraSnippets/JavaScript/Extras/Data formats/extra-javascript-redact-log.md",
+    "language": "javascript",
+    "expected": "{\"user\":\"Ada\",\"details\":{\"ok\":true}}\n",
+    "setup": null
+  },
+  "extra-go-sha256": {
+    "path": "ExtraSnippets/Go/Extras/Data formats/extra-go-sha256.md",
+    "language": "go",
+    "expected": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824\n",
+    "setup": null
+  },
+  "extra-go-wrapped-error": {
+    "path": "ExtraSnippets/Go/Extras/Errors/extra-go-wrapped-error.md",
+    "language": "go",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "extra-go-resolve-url": {
+    "path": "ExtraSnippets/Go/Extras/Data formats/extra-go-resolve-url.md",
+    "language": "go",
+    "expected": "https://example.test/docs/guide?q=go\n",
+    "setup": null
+  },
+  "extra-kotlin-strip-accents": {
+    "path": "ExtraSnippets/Kotlin/Extras/Strings/extra-kotlin-strip-accents.md",
+    "language": "kotlin",
+    "expected": "Cafe\n",
+    "setup": null
+  },
+  "extra-kotlin-adjacent-changes": {
+    "path": "ExtraSnippets/Kotlin/Extras/Collections/extra-kotlin-adjacent-changes.md",
+    "language": "kotlin",
+    "expected": "[5, -3]\n[]\n",
+    "setup": null
+  },
+  "extra-cobol-allocate-cents": {
+    "path": "ExtraSnippets/COBOL/Extras/Numbers/extra-cobol-allocate-cents.md",
+    "language": "cobol",
+    "expected": "00333,00001\n",
+    "setup": null
+  },
+  "extra-cobol-weighted-average": {
+    "path": "ExtraSnippets/COBOL/Extras/Numbers/extra-cobol-weighted-average.md",
+    "language": "cobol",
+    "expected": "0016.00\n",
+    "setup": null
+  },
+  "extra-sql-date-islands": {
+    "path": "ExtraSnippets/SQL/Extras/Reporting/extra-sql-date-islands.md",
+    "language": "sql",
+    "expected": [
+      ["2026-01-01", "2026-01-02", 2],
+      ["2026-01-04", "2026-01-05", 2]
+    ],
+    "setup": null
+  },
+  "extra-sql-median": {
+    "path": "ExtraSnippets/SQL/Extras/Reporting/extra-sql-median.md",
+    "language": "sql",
+    "expected": [[25.0]],
+    "setup": null
+  },
+  "extra-sql-low-stock": {
+    "path": "ExtraSnippets/SQL/Extras/Read procedures/extra-sql-low-stock.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "extra-sql-rename-product": {
+    "path": "ExtraSnippets/SQL/Extras/Write procedures/extra-sql-rename-product.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  }
+}

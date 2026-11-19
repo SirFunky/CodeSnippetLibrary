@@ -20,6 +20,8 @@ export default defineConfig({
             "shiki/core",
             "shiki/engine/javascript",
             "@shikijs/langs/java",
+            "@shikijs/langs/python",
+            "@shikijs/langs/csharp",
             "@shikijs/themes/github-dark",
             "@shikijs/themes/github-light",
           ],

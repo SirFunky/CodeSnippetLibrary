@@ -1,6 +1,6 @@
 {
-  "name": "java-snippet-library",
-  "version": "1.0.0",
+  "name": "code-snippet-library",
+  "version": "1.13.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,9 +9,22 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
     "test:ui": "playwright test",
+    "verify:python": "node scripts/verify-python.mjs",
+    "verify:csharp": "node scripts/verify-csharp.mjs",
+    "verify:cpp": "scripts\\verify-cpp.cmd",
+    "verify:typescript": "node scripts/verify-typescript.mjs",
+    "verify:sql": "node scripts/verify-sql.mjs",
     "tauri": "tauri",
     "desktop": "tauri dev",
-    "installer": "tauri build"
+    "installer": "tauri build",
+    "verify:c": "scripts\\verify-c.cmd",
+    "verify:javascript": "node scripts/verify-javascript.mjs",
+    "verify:go": "node scripts/verify-go.mjs",
+    "verify:kotlin": "node scripts/verify-kotlin.mjs",
+    "verify:cobol": "node scripts/verify-cobol.mjs",
+    "verify:starters": "scripts\\verify-starters.cmd",
+    "verify:everyday": "scripts\\verify-everyday.cmd",
+    "verify:extras": "scripts\\verify-everyday.cmd --extras"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.0.0",

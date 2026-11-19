@@ -1,12 +1,12 @@
 [package]
-name = "java-snippet-library"
-version = "1.0.0"
-description = "An offline Java snippet workbench"
-authors = ["Java Snippet Library contributors"]
+name = "code-snippet-library"
+version = "1.13.0"
+description = "An offline Java, Python and C# snippet workbench"
+authors = ["Code Snippet Library contributors"]
 edition = "2021"
 
 [lib]
-name = "java_snippet_library_lib"
+name = "code_snippet_library_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]

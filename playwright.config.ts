@@ -1,5 +1,7 @@
 import { defineConfig } from "@playwright/test";
 export default defineConfig({
+  // Clipboard is shared by browser contexts on Windows; keep copy assertions serial.
+  workers: 1,
   testDir: "./tests/e2e",
   timeout: 60000,
   use: {

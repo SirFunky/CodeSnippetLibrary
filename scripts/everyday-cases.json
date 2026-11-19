@@ -1,0 +1,1504 @@
+{
+  "everyday-javascript-slug": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Strings\\everyday-javascript-slug.md",
+    "language": "javascript",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-typescript-slug": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Strings\\everyday-typescript-slug.md",
+    "language": "typescript",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-javascript-collapse-spaces": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Strings\\everyday-javascript-collapse-spaces.md",
+    "language": "javascript",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-typescript-collapse-spaces": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Strings\\everyday-typescript-collapse-spaces.md",
+    "language": "typescript",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-javascript-mask-id": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Strings\\everyday-javascript-mask-id.md",
+    "language": "javascript",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-typescript-mask-id": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Strings\\everyday-typescript-mask-id.md",
+    "language": "typescript",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-javascript-csv-field": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Data formats\\everyday-javascript-csv-field.md",
+    "language": "javascript",
+    "expected": "\"Ada, \"\"A\"\"\"\nplain\n",
+    "setup": null
+  },
+  "everyday-typescript-csv-field": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Data formats\\everyday-typescript-csv-field.md",
+    "language": "typescript",
+    "expected": "\"Ada, \"\"A\"\"\"\nplain\n",
+    "setup": null
+  },
+  "everyday-javascript-hex-encode": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Data formats\\everyday-javascript-hex-encode.md",
+    "language": "javascript",
+    "expected": "000fff\ninvalid\n",
+    "setup": null
+  },
+  "everyday-typescript-hex-encode": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Data formats\\everyday-typescript-hex-encode.md",
+    "language": "typescript",
+    "expected": "000fff\ninvalid\n",
+    "setup": null
+  },
+  "everyday-javascript-hex-decode": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Data formats\\everyday-javascript-hex-decode.md",
+    "language": "javascript",
+    "expected": "[0,15,255]\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-hex-decode": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Data formats\\everyday-typescript-hex-decode.md",
+    "language": "typescript",
+    "expected": "[0,15,255]\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-parse-flag": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Validation\\everyday-javascript-parse-flag.md",
+    "language": "javascript",
+    "expected": "true\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-parse-flag": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Validation\\everyday-typescript-parse-flag.md",
+    "language": "typescript",
+    "expected": "true\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-bounded-integer": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Validation\\everyday-javascript-bounded-integer.md",
+    "language": "javascript",
+    "expected": "42\nnull\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-bounded-integer": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Validation\\everyday-typescript-bounded-integer.md",
+    "language": "typescript",
+    "expected": "42\nnull\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-safe-divide": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Numbers\\everyday-javascript-safe-divide.md",
+    "language": "javascript",
+    "expected": "2.5\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-safe-divide": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Numbers\\everyday-typescript-safe-divide.md",
+    "language": "typescript",
+    "expected": "2.5\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-format-cents": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Numbers\\everyday-javascript-format-cents.md",
+    "language": "javascript",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-typescript-format-cents": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Numbers\\everyday-typescript-format-cents.md",
+    "language": "typescript",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-javascript-duration": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Dates & Time\\everyday-javascript-duration.md",
+    "language": "javascript",
+    "expected": "01:01:01\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-duration": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Dates & Time\\everyday-typescript-duration.md",
+    "language": "typescript",
+    "expected": "01:01:01\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-valid-date": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Validation\\everyday-javascript-valid-date.md",
+    "language": "javascript",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-typescript-valid-date": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Validation\\everyday-typescript-valid-date.md",
+    "language": "typescript",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-javascript-compare-version": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Validation\\everyday-javascript-compare-version.md",
+    "language": "javascript",
+    "expected": "-1\n0\n",
+    "setup": null
+  },
+  "everyday-typescript-compare-version": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Validation\\everyday-typescript-compare-version.md",
+    "language": "typescript",
+    "expected": "-1\n0\n",
+    "setup": null
+  },
+  "everyday-javascript-pagination": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-pagination.md",
+    "language": "javascript",
+    "expected": "{\"start\":20,\"end\":23}\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-pagination": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-pagination.md",
+    "language": "typescript",
+    "expected": "{\"start\":20,\"end\":23}\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-chunk-list": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-chunk-list.md",
+    "language": "javascript",
+    "expected": "[[1,2],[3,4],[5]]\n[]\n",
+    "setup": null
+  },
+  "everyday-typescript-chunk-list": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-chunk-list.md",
+    "language": "typescript",
+    "expected": "[[1,2],[3,4],[5]]\n[]\n",
+    "setup": null
+  },
+  "everyday-javascript-partition": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-partition.md",
+    "language": "javascript",
+    "expected": "[[2,4],[1,3]]\n",
+    "setup": null
+  },
+  "everyday-typescript-partition": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-partition.md",
+    "language": "typescript",
+    "expected": "[[2,4],[1,3]]\n",
+    "setup": null
+  },
+  "everyday-javascript-window-sums": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-window-sums.md",
+    "language": "javascript",
+    "expected": "[6,9]\n",
+    "setup": null
+  },
+  "everyday-typescript-window-sums": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-window-sums.md",
+    "language": "typescript",
+    "expected": "[6,9]\n",
+    "setup": null
+  },
+  "everyday-javascript-running-totals": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-running-totals.md",
+    "language": "javascript",
+    "expected": "[2,1,5]\n",
+    "setup": null
+  },
+  "everyday-typescript-running-totals": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-running-totals.md",
+    "language": "typescript",
+    "expected": "[2,1,5]\n",
+    "setup": null
+  },
+  "everyday-javascript-merge-sorted": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-merge-sorted.md",
+    "language": "javascript",
+    "expected": "[1,2,3,3,4,5]\n",
+    "setup": null
+  },
+  "everyday-typescript-merge-sorted": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-merge-sorted.md",
+    "language": "typescript",
+    "expected": "[1,2,3,3,4,5]\n",
+    "setup": null
+  },
+  "everyday-javascript-rotate": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-rotate.md",
+    "language": "javascript",
+    "expected": "[4,1,2,3]\n",
+    "setup": null
+  },
+  "everyday-typescript-rotate": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-rotate.md",
+    "language": "typescript",
+    "expected": "[4,1,2,3]\n",
+    "setup": null
+  },
+  "everyday-javascript-transpose": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-transpose.md",
+    "language": "javascript",
+    "expected": "[[1,4],[2,5],[3,6]]\nnull\n",
+    "setup": null
+  },
+  "everyday-typescript-transpose": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-transpose.md",
+    "language": "typescript",
+    "expected": "[[1,4],[2,5],[3,6]]\nnull\n",
+    "setup": null
+  },
+  "everyday-javascript-balanced": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Validation\\everyday-javascript-balanced.md",
+    "language": "javascript",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-typescript-balanced": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Validation\\everyday-typescript-balanced.md",
+    "language": "typescript",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-javascript-extension": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Files & I\\O\\everyday-javascript-extension.md",
+    "language": "javascript",
+    "expected": "csv\n\"\"\n",
+    "setup": null
+  },
+  "everyday-typescript-extension": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Files & I\\O\\everyday-typescript-extension.md",
+    "language": "typescript",
+    "expected": "csv\n\"\"\n",
+    "setup": null
+  },
+  "everyday-javascript-dedupe-records": {
+    "path": "EverydaySnippets\\JavaScript\\Everyday\\Collections\\everyday-javascript-dedupe-records.md",
+    "language": "javascript",
+    "expected": "[{\"id\":1,\"name\":\"Ada\"},{\"id\":2,\"name\":\"Linus\"}]\n",
+    "setup": null
+  },
+  "everyday-typescript-dedupe-records": {
+    "path": "EverydaySnippets\\TypeScript\\Everyday\\Collections\\everyday-typescript-dedupe-records.md",
+    "language": "typescript",
+    "expected": "[{\"id\":1,\"name\":\"Ada\"},{\"id\":2,\"name\":\"Linus\"}]\n",
+    "setup": null
+  },
+  "everyday-python-slug": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Strings\\everyday-python-slug.md",
+    "language": "python",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-python-collapse-spaces": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Strings\\everyday-python-collapse-spaces.md",
+    "language": "python",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-python-mask-id": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Strings\\everyday-python-mask-id.md",
+    "language": "python",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-python-csv-field": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Data formats\\everyday-python-csv-field.md",
+    "language": "python",
+    "expected": "\"Ada, \"\"A\"\"\"\nplain\n",
+    "setup": null
+  },
+  "everyday-python-hex-encode": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Data formats\\everyday-python-hex-encode.md",
+    "language": "python",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-python-hex-decode": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Data formats\\everyday-python-hex-decode.md",
+    "language": "python",
+    "expected": "[0, 15, 255]\nNone\n",
+    "setup": null
+  },
+  "everyday-python-parse-flag": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Validation\\everyday-python-parse-flag.md",
+    "language": "python",
+    "expected": "True\nNone\n",
+    "setup": null
+  },
+  "everyday-python-bounded-integer": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Validation\\everyday-python-bounded-integer.md",
+    "language": "python",
+    "expected": "42\nNone\nNone\n",
+    "setup": null
+  },
+  "everyday-python-safe-divide": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Numbers\\everyday-python-safe-divide.md",
+    "language": "python",
+    "expected": "2.5\nNone\n",
+    "setup": null
+  },
+  "everyday-python-format-cents": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Numbers\\everyday-python-format-cents.md",
+    "language": "python",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-python-duration": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Dates & Time\\everyday-python-duration.md",
+    "language": "python",
+    "expected": "01:01:01\nNone\n",
+    "setup": null
+  },
+  "everyday-python-valid-date": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Validation\\everyday-python-valid-date.md",
+    "language": "python",
+    "expected": "True\nFalse\n",
+    "setup": null
+  },
+  "everyday-python-compare-version": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Validation\\everyday-python-compare-version.md",
+    "language": "python",
+    "expected": "-1\n0\n",
+    "setup": null
+  },
+  "everyday-python-pagination": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-pagination.md",
+    "language": "python",
+    "expected": "(20, 23)\nNone\n",
+    "setup": null
+  },
+  "everyday-python-chunk-list": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-chunk-list.md",
+    "language": "python",
+    "expected": "[[1, 2], [3, 4], [5]]\n[]\n",
+    "setup": null
+  },
+  "everyday-python-partition": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-partition.md",
+    "language": "python",
+    "expected": "([2, 4], [1, 3])\n",
+    "setup": null
+  },
+  "everyday-python-window-sums": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-window-sums.md",
+    "language": "python",
+    "expected": "[6, 9]\n",
+    "setup": null
+  },
+  "everyday-python-running-totals": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-running-totals.md",
+    "language": "python",
+    "expected": "[2, 1, 5]\n",
+    "setup": null
+  },
+  "everyday-python-merge-sorted": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-merge-sorted.md",
+    "language": "python",
+    "expected": "[1, 2, 3, 3, 4, 5]\n",
+    "setup": null
+  },
+  "everyday-python-rotate": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-rotate.md",
+    "language": "python",
+    "expected": "[4, 1, 2, 3]\n",
+    "setup": null
+  },
+  "everyday-python-transpose": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-transpose.md",
+    "language": "python",
+    "expected": "[[1, 4], [2, 5], [3, 6]]\nNone\n",
+    "setup": null
+  },
+  "everyday-python-balanced": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Validation\\everyday-python-balanced.md",
+    "language": "python",
+    "expected": "True\nFalse\n",
+    "setup": null
+  },
+  "everyday-python-extension": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Files & I\\O\\everyday-python-extension.md",
+    "language": "python",
+    "expected": "csv\n''\n",
+    "setup": null
+  },
+  "everyday-python-dedupe-records": {
+    "path": "EverydaySnippets\\Python\\Everyday\\Collections\\everyday-python-dedupe-records.md",
+    "language": "python",
+    "expected": "['Ada', 'Linus']\n",
+    "setup": null
+  },
+  "everyday-java-normalize-path": {
+    "path": "EverydaySnippets\\Everyday\\Files & I\\O\\everyday-java-normalize-path.md",
+    "language": "java",
+    "expected": "reports/final.txt\n",
+    "setup": null
+  },
+  "everyday-java-uuid": {
+    "path": "EverydaySnippets\\Everyday\\Validation\\everyday-java-uuid.md",
+    "language": "java",
+    "expected": "true\ntrue\n",
+    "setup": null
+  },
+  "everyday-java-decimal-rounding": {
+    "path": "EverydaySnippets\\Everyday\\Numbers\\everyday-java-decimal-rounding.md",
+    "language": "java",
+    "expected": "12.35\n-0.01\n",
+    "setup": null
+  },
+  "everyday-csharp-slug": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Strings\\everyday-csharp-slug.md",
+    "language": "csharp",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-csharp-collapse-spaces": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Strings\\everyday-csharp-collapse-spaces.md",
+    "language": "csharp",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-csharp-mask-id": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Strings\\everyday-csharp-mask-id.md",
+    "language": "csharp",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-csharp-csv-field": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Data formats\\everyday-csharp-csv-field.md",
+    "language": "csharp",
+    "expected": "\"Ada, \"\"A\"\"\"\nplain\n",
+    "setup": null
+  },
+  "everyday-csharp-hex-encode": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Data formats\\everyday-csharp-hex-encode.md",
+    "language": "csharp",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-csharp-hex-decode": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Data formats\\everyday-csharp-hex-decode.md",
+    "language": "csharp",
+    "expected": "0,15,255\ninvalid\n",
+    "setup": null
+  },
+  "everyday-csharp-parse-flag": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Validation\\everyday-csharp-parse-flag.md",
+    "language": "csharp",
+    "expected": "true\ninvalid\n",
+    "setup": null
+  },
+  "everyday-csharp-bounded-integer": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Validation\\everyday-csharp-bounded-integer.md",
+    "language": "csharp",
+    "expected": "42\ninvalid\ninvalid\n",
+    "setup": null
+  },
+  "everyday-csharp-safe-divide": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Numbers\\everyday-csharp-safe-divide.md",
+    "language": "csharp",
+    "expected": "2.5\ninvalid\n",
+    "setup": null
+  },
+  "everyday-csharp-format-cents": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Numbers\\everyday-csharp-format-cents.md",
+    "language": "csharp",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-csharp-duration": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Dates & Time\\everyday-csharp-duration.md",
+    "language": "csharp",
+    "expected": "01:01:01\n",
+    "setup": null
+  },
+  "everyday-csharp-valid-date": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Validation\\everyday-csharp-valid-date.md",
+    "language": "csharp",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-csharp-compare-version": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Validation\\everyday-csharp-compare-version.md",
+    "language": "csharp",
+    "expected": "-1\nequal\n",
+    "setup": null
+  },
+  "everyday-csharp-pagination": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-pagination.md",
+    "language": "csharp",
+    "expected": "20,23\n",
+    "setup": null
+  },
+  "everyday-csharp-chunk-list": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-chunk-list.md",
+    "language": "csharp",
+    "expected": "1,2\n3,4\n5\n",
+    "setup": null
+  },
+  "everyday-csharp-partition": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-partition.md",
+    "language": "csharp",
+    "expected": "2,4\n1,3\n",
+    "setup": null
+  },
+  "everyday-csharp-window-sums": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-window-sums.md",
+    "language": "csharp",
+    "expected": "6,9\n",
+    "setup": null
+  },
+  "everyday-csharp-running-totals": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-running-totals.md",
+    "language": "csharp",
+    "expected": "2\n1\n5\n",
+    "setup": null
+  },
+  "everyday-csharp-merge-sorted": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-merge-sorted.md",
+    "language": "csharp",
+    "expected": "1,2,3,3,4,5\n",
+    "setup": null
+  },
+  "everyday-csharp-rotate": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-rotate.md",
+    "language": "csharp",
+    "expected": "4,1,2,3\n",
+    "setup": null
+  },
+  "everyday-csharp-transpose": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-transpose.md",
+    "language": "csharp",
+    "expected": "1,4\n2,5\n3,6\n",
+    "setup": null
+  },
+  "everyday-csharp-balanced": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Validation\\everyday-csharp-balanced.md",
+    "language": "csharp",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-csharp-extension": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Files & I\\O\\everyday-csharp-extension.md",
+    "language": "csharp",
+    "expected": "csv\n0\n",
+    "setup": null
+  },
+  "everyday-csharp-dedupe-records": {
+    "path": "EverydaySnippets\\CSharp\\Everyday\\Collections\\everyday-csharp-dedupe-records.md",
+    "language": "csharp",
+    "expected": "1:Ada\n2:Linus\n",
+    "setup": null
+  },
+  "everyday-go-slug": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Strings\\everyday-go-slug.md",
+    "language": "go",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-go-collapse-spaces": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Strings\\everyday-go-collapse-spaces.md",
+    "language": "go",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-go-mask-id": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Strings\\everyday-go-mask-id.md",
+    "language": "go",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-go-csv-record": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Data formats\\everyday-go-csv-record.md",
+    "language": "go",
+    "expected": "\"Ada, \"\"A\"\"\",plain\n",
+    "setup": null
+  },
+  "everyday-go-hex-encode": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Data formats\\everyday-go-hex-encode.md",
+    "language": "go",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-go-hex-decode": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Data formats\\everyday-go-hex-decode.md",
+    "language": "go",
+    "expected": "[0 15 255]\ninvalid\n",
+    "setup": null
+  },
+  "everyday-go-parse-flag": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Validation\\everyday-go-parse-flag.md",
+    "language": "go",
+    "expected": "true\ninvalid\n",
+    "setup": null
+  },
+  "everyday-go-bounded-integer": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Validation\\everyday-go-bounded-integer.md",
+    "language": "go",
+    "expected": "42\ninvalid\ninvalid\n",
+    "setup": null
+  },
+  "everyday-go-safe-divide": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Numbers\\everyday-go-safe-divide.md",
+    "language": "go",
+    "expected": "2.5\ninvalid\n",
+    "setup": null
+  },
+  "everyday-go-format-cents": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Numbers\\everyday-go-format-cents.md",
+    "language": "go",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-go-duration": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Dates & Time\\everyday-go-duration.md",
+    "language": "go",
+    "expected": "01:01:01\n",
+    "setup": null
+  },
+  "everyday-go-valid-date": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Validation\\everyday-go-valid-date.md",
+    "language": "go",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-go-url-query": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Data formats\\everyday-go-url-query.md",
+    "language": "go",
+    "expected": "page=2&q=Ada+%26+Linus\n",
+    "setup": null
+  },
+  "everyday-go-pagination": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-pagination.md",
+    "language": "go",
+    "expected": "20,23\n",
+    "setup": null
+  },
+  "everyday-go-chunk-list": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-chunk-list.md",
+    "language": "go",
+    "expected": "[1 2]\n[3 4]\n[5]\n",
+    "setup": null
+  },
+  "everyday-go-partition": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-partition.md",
+    "language": "go",
+    "expected": "[2 4]\n[1 3]\n",
+    "setup": null
+  },
+  "everyday-go-window-sums": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-window-sums.md",
+    "language": "go",
+    "expected": "[6 9]\n",
+    "setup": null
+  },
+  "everyday-go-running-totals": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-running-totals.md",
+    "language": "go",
+    "expected": "[2 1 5]\n",
+    "setup": null
+  },
+  "everyday-go-merge-sorted": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-merge-sorted.md",
+    "language": "go",
+    "expected": "[1 2 3 3 4 5]\n",
+    "setup": null
+  },
+  "everyday-go-rotate": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-rotate.md",
+    "language": "go",
+    "expected": "[4 1 2 3]\n",
+    "setup": null
+  },
+  "everyday-go-transpose": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-transpose.md",
+    "language": "go",
+    "expected": "[1 4]\n[2 5]\n[3 6]\n",
+    "setup": null
+  },
+  "everyday-go-balanced": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Validation\\everyday-go-balanced.md",
+    "language": "go",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-go-extension": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Files & I\\O\\everyday-go-extension.md",
+    "language": "go",
+    "expected": "csv\n",
+    "setup": null
+  },
+  "everyday-go-dedupe-records": {
+    "path": "EverydaySnippets\\Go\\Everyday\\Collections\\everyday-go-dedupe-records.md",
+    "language": "go",
+    "expected": "1:Ada\n2:Linus\n",
+    "setup": null
+  },
+  "everyday-kotlin-slug": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Strings\\everyday-kotlin-slug.md",
+    "language": "kotlin",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-kotlin-collapse-spaces": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Strings\\everyday-kotlin-collapse-spaces.md",
+    "language": "kotlin",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-kotlin-mask-id": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Strings\\everyday-kotlin-mask-id.md",
+    "language": "kotlin",
+    "expected": "*****3456\n123\n",
+    "setup": null
+  },
+  "everyday-kotlin-csv-field": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Data formats\\everyday-kotlin-csv-field.md",
+    "language": "kotlin",
+    "expected": "\"Ada, \"\"A\"\"\"\nplain\n",
+    "setup": null
+  },
+  "everyday-kotlin-hex-encode": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Data formats\\everyday-kotlin-hex-encode.md",
+    "language": "kotlin",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-kotlin-hex-decode": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Data formats\\everyday-kotlin-hex-decode.md",
+    "language": "kotlin",
+    "expected": "[0, 15, 255]\nnull\n",
+    "setup": null
+  },
+  "everyday-kotlin-parse-flag": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Validation\\everyday-kotlin-parse-flag.md",
+    "language": "kotlin",
+    "expected": "true\nnull\n",
+    "setup": null
+  },
+  "everyday-kotlin-bounded-integer": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Validation\\everyday-kotlin-bounded-integer.md",
+    "language": "kotlin",
+    "expected": "42\nnull\nnull\n",
+    "setup": null
+  },
+  "everyday-kotlin-safe-divide": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Numbers\\everyday-kotlin-safe-divide.md",
+    "language": "kotlin",
+    "expected": "2.5\nnull\n",
+    "setup": null
+  },
+  "everyday-kotlin-format-cents": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Numbers\\everyday-kotlin-format-cents.md",
+    "language": "kotlin",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-kotlin-duration": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Dates & Time\\everyday-kotlin-duration.md",
+    "language": "kotlin",
+    "expected": "01:01:01\n",
+    "setup": null
+  },
+  "everyday-kotlin-valid-date": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Validation\\everyday-kotlin-valid-date.md",
+    "language": "kotlin",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-kotlin-compare-version": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Validation\\everyday-kotlin-compare-version.md",
+    "language": "kotlin",
+    "expected": "-1\n0\n",
+    "setup": null
+  },
+  "everyday-kotlin-pagination": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-pagination.md",
+    "language": "kotlin",
+    "expected": "20,23\n",
+    "setup": null
+  },
+  "everyday-kotlin-chunk-list": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-chunk-list.md",
+    "language": "kotlin",
+    "expected": "[[1, 2], [3, 4], [5]]\n[]\n",
+    "setup": null
+  },
+  "everyday-kotlin-partition": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-partition.md",
+    "language": "kotlin",
+    "expected": "[2, 4]\n[1, 3]\n",
+    "setup": null
+  },
+  "everyday-kotlin-window-sums": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-window-sums.md",
+    "language": "kotlin",
+    "expected": "[6, 9]\n",
+    "setup": null
+  },
+  "everyday-kotlin-running-totals": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-running-totals.md",
+    "language": "kotlin",
+    "expected": "[2, 1, 5]\n",
+    "setup": null
+  },
+  "everyday-kotlin-merge-sorted": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-merge-sorted.md",
+    "language": "kotlin",
+    "expected": "[1, 2, 3, 3, 4, 5]\n",
+    "setup": null
+  },
+  "everyday-kotlin-rotate": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-rotate.md",
+    "language": "kotlin",
+    "expected": "[4, 1, 2, 3]\n",
+    "setup": null
+  },
+  "everyday-kotlin-transpose": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-transpose.md",
+    "language": "kotlin",
+    "expected": "[[1, 4], [2, 5], [3, 6]]\n",
+    "setup": null
+  },
+  "everyday-kotlin-balanced": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Validation\\everyday-kotlin-balanced.md",
+    "language": "kotlin",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-kotlin-extension": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Files & I\\O\\everyday-kotlin-extension.md",
+    "language": "kotlin",
+    "expected": "csv\n0\n",
+    "setup": null
+  },
+  "everyday-kotlin-dedupe-records": {
+    "path": "EverydaySnippets\\Kotlin\\Everyday\\Collections\\everyday-kotlin-dedupe-records.md",
+    "language": "kotlin",
+    "expected": "1:Ada\n2:Linus\n",
+    "setup": null
+  },
+  "everyday-c-collapse-spaces": {
+    "path": "EverydaySnippets\\C\\Everyday\\Strings\\everyday-c-collapse-spaces.md",
+    "language": "c",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-c-mask-id": {
+    "path": "EverydaySnippets\\C\\Everyday\\Strings\\everyday-c-mask-id.md",
+    "language": "c",
+    "expected": "*****3456\n",
+    "setup": null
+  },
+  "everyday-c-csv-field": {
+    "path": "EverydaySnippets\\C\\Everyday\\Data formats\\everyday-c-csv-field.md",
+    "language": "c",
+    "expected": "\"Ada, \"\"A\"\"\"\n",
+    "setup": null
+  },
+  "everyday-c-hex-encode": {
+    "path": "EverydaySnippets\\C\\Everyday\\Data formats\\everyday-c-hex-encode.md",
+    "language": "c",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-c-hex-decode": {
+    "path": "EverydaySnippets\\C\\Everyday\\Data formats\\everyday-c-hex-decode.md",
+    "language": "c",
+    "expected": "0,15,255\ninvalid\n",
+    "setup": null
+  },
+  "everyday-c-bounded-integer": {
+    "path": "EverydaySnippets\\C\\Everyday\\Validation\\everyday-c-bounded-integer.md",
+    "language": "c",
+    "expected": "42\ninvalid\ninvalid\ninvalid\n",
+    "setup": null
+  },
+  "everyday-c-safe-divide": {
+    "path": "EverydaySnippets\\C\\Everyday\\Numbers\\everyday-c-safe-divide.md",
+    "language": "c",
+    "expected": "2.5\ninvalid\n",
+    "setup": null
+  },
+  "everyday-c-format-cents": {
+    "path": "EverydaySnippets\\C\\Everyday\\Numbers\\everyday-c-format-cents.md",
+    "language": "c",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-c-duration": {
+    "path": "EverydaySnippets\\C\\Everyday\\Dates & Time\\everyday-c-duration.md",
+    "language": "c",
+    "expected": "01:01:01\n",
+    "setup": null
+  },
+  "everyday-c-valid-date": {
+    "path": "EverydaySnippets\\C\\Everyday\\Validation\\everyday-c-valid-date.md",
+    "language": "c",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-c-pagination": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-pagination.md",
+    "language": "c",
+    "expected": "20,23\n",
+    "setup": null
+  },
+  "everyday-c-chunk-list": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-chunk-list.md",
+    "language": "c",
+    "expected": "1,2\n3,4\n5\n",
+    "setup": null
+  },
+  "everyday-c-partition": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-partition.md",
+    "language": "c",
+    "expected": "2,4\n1,3\n",
+    "setup": null
+  },
+  "everyday-c-window-sums": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-window-sums.md",
+    "language": "c",
+    "expected": "6\n9\n",
+    "setup": null
+  },
+  "everyday-c-running-totals": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-running-totals.md",
+    "language": "c",
+    "expected": "2\n1\n5\n",
+    "setup": null
+  },
+  "everyday-c-merge-sorted": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-merge-sorted.md",
+    "language": "c",
+    "expected": "1,2,3,3,4,5\n",
+    "setup": null
+  },
+  "everyday-c-rotate": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-rotate.md",
+    "language": "c",
+    "expected": "4,1,2,3\n",
+    "setup": null
+  },
+  "everyday-c-transpose": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-transpose.md",
+    "language": "c",
+    "expected": "1,4\n2,5\n3,6\n",
+    "setup": null
+  },
+  "everyday-c-balanced": {
+    "path": "EverydaySnippets\\C\\Everyday\\Validation\\everyday-c-balanced.md",
+    "language": "c",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-c-extension": {
+    "path": "EverydaySnippets\\C\\Everyday\\Files & I\\O\\everyday-c-extension.md",
+    "language": "c",
+    "expected": "csv\n",
+    "setup": null
+  },
+  "everyday-c-dedupe-records": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-dedupe-records.md",
+    "language": "c",
+    "expected": "1:Ada\n2:Linus\n",
+    "setup": null
+  },
+  "everyday-c-binary-search": {
+    "path": "EverydaySnippets\\C\\Everyday\\Collections\\everyday-c-binary-search.md",
+    "language": "c",
+    "expected": "3\n",
+    "setup": null
+  },
+  "everyday-c-gcd": {
+    "path": "EverydaySnippets\\C\\Everyday\\Numbers\\everyday-c-gcd.md",
+    "language": "c",
+    "expected": "6\n",
+    "setup": null
+  },
+  "everyday-c-allocation": {
+    "path": "EverydaySnippets\\C\\Everyday\\Memory\\everyday-c-allocation.md",
+    "language": "c",
+    "expected": "0,1,2,3\n",
+    "setup": null
+  },
+  "everyday-cpp-slug": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Strings\\everyday-cpp-slug.md",
+    "language": "cpp",
+    "expected": "ada-lovelace\n",
+    "setup": null
+  },
+  "everyday-cpp-collapse-spaces": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Strings\\everyday-cpp-collapse-spaces.md",
+    "language": "cpp",
+    "expected": "Ada Linus Grace\n",
+    "setup": null
+  },
+  "everyday-cpp-mask-id": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Strings\\everyday-cpp-mask-id.md",
+    "language": "cpp",
+    "expected": "*****3456\n",
+    "setup": null
+  },
+  "everyday-cpp-csv-field": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Data formats\\everyday-cpp-csv-field.md",
+    "language": "cpp",
+    "expected": "\"Ada, \"\"A\"\"\"\n",
+    "setup": null
+  },
+  "everyday-cpp-hex-encode": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Data formats\\everyday-cpp-hex-encode.md",
+    "language": "cpp",
+    "expected": "000fff\n",
+    "setup": null
+  },
+  "everyday-cpp-hex-decode": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Data formats\\everyday-cpp-hex-decode.md",
+    "language": "cpp",
+    "expected": "0,15,255\ninvalid\n",
+    "setup": null
+  },
+  "everyday-cpp-bounded-integer": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Validation\\everyday-cpp-bounded-integer.md",
+    "language": "cpp",
+    "expected": "42\ninvalid\ninvalid\ninvalid\n",
+    "setup": null
+  },
+  "everyday-cpp-safe-divide": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Numbers\\everyday-cpp-safe-divide.md",
+    "language": "cpp",
+    "expected": "2.5\ninvalid\n",
+    "setup": null
+  },
+  "everyday-cpp-format-cents": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Numbers\\everyday-cpp-format-cents.md",
+    "language": "cpp",
+    "expected": "123.45\n-0.05\n",
+    "setup": null
+  },
+  "everyday-cpp-duration": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Dates & Time\\everyday-cpp-duration.md",
+    "language": "cpp",
+    "expected": "01:01:01\n",
+    "setup": null
+  },
+  "everyday-cpp-valid-date": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Validation\\everyday-cpp-valid-date.md",
+    "language": "cpp",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-cpp-pagination": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-pagination.md",
+    "language": "cpp",
+    "expected": "20,23\n",
+    "setup": null
+  },
+  "everyday-cpp-chunk-list": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-chunk-list.md",
+    "language": "cpp",
+    "expected": "1,2\n3,4\n5\n",
+    "setup": null
+  },
+  "everyday-cpp-partition": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-partition.md",
+    "language": "cpp",
+    "expected": "2,4\n1,3\n",
+    "setup": null
+  },
+  "everyday-cpp-window-sums": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-window-sums.md",
+    "language": "cpp",
+    "expected": "6\n9\n",
+    "setup": null
+  },
+  "everyday-cpp-running-totals": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-running-totals.md",
+    "language": "cpp",
+    "expected": "2\n1\n5\n",
+    "setup": null
+  },
+  "everyday-cpp-merge-sorted": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-merge-sorted.md",
+    "language": "cpp",
+    "expected": "1,2,3,3,4,5\n",
+    "setup": null
+  },
+  "everyday-cpp-rotate": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-rotate.md",
+    "language": "cpp",
+    "expected": "4,1,2,3\n",
+    "setup": null
+  },
+  "everyday-cpp-transpose": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-transpose.md",
+    "language": "cpp",
+    "expected": "1,4\n2,5\n3,6\n",
+    "setup": null
+  },
+  "everyday-cpp-balanced": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Validation\\everyday-cpp-balanced.md",
+    "language": "cpp",
+    "expected": "true\nfalse\n",
+    "setup": null
+  },
+  "everyday-cpp-extension": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Files & I\\O\\everyday-cpp-extension.md",
+    "language": "cpp",
+    "expected": "csv\n",
+    "setup": null
+  },
+  "everyday-cpp-dedupe-records": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-dedupe-records.md",
+    "language": "cpp",
+    "expected": "1:Ada\n2:Linus\n",
+    "setup": null
+  },
+  "everyday-cpp-binary-search": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Collections\\everyday-cpp-binary-search.md",
+    "language": "cpp",
+    "expected": "3\n",
+    "setup": null
+  },
+  "everyday-cpp-gcd": {
+    "path": "EverydaySnippets\\Cpp\\Everyday\\Numbers\\everyday-cpp-gcd.md",
+    "language": "cpp",
+    "expected": "6\n",
+    "setup": null
+  },
+  "everyday-cobol-mask-id": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Strings\\everyday-cobol-mask-id.md",
+    "language": "cobol",
+    "expected": "*****3456\n",
+    "setup": null
+  },
+  "everyday-cobol-left-pad": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Strings\\everyday-cobol-left-pad.md",
+    "language": "cobol",
+    "expected": "0042\n",
+    "setup": null
+  },
+  "everyday-cobol-blank-default": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Strings\\everyday-cobol-blank-default.md",
+    "language": "cobol",
+    "expected": "Unknown\n",
+    "setup": null
+  },
+  "everyday-cobol-replace-delimiter": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Strings\\everyday-cobol-replace-delimiter.md",
+    "language": "cobol",
+    "expected": "Ada,Linus,G\n",
+    "setup": null
+  },
+  "everyday-cobol-prefix": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Validation\\everyday-cobol-prefix.md",
+    "language": "cobol",
+    "expected": "invoice\n",
+    "setup": null
+  },
+  "everyday-cobol-bounded-integer": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Validation\\everyday-cobol-bounded-integer.md",
+    "language": "cobol",
+    "expected": "042\n",
+    "setup": null
+  },
+  "everyday-cobol-postal-code": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Validation\\everyday-cobol-postal-code.md",
+    "language": "cobol",
+    "expected": "valid\n",
+    "setup": null
+  },
+  "everyday-cobol-safe-divide": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Numbers\\everyday-cobol-safe-divide.md",
+    "language": "cobol",
+    "expected": "002.50\ninvalid\n",
+    "setup": null
+  },
+  "everyday-cobol-invoice-total": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Numbers\\everyday-cobol-invoice-total.md",
+    "language": "cobol",
+    "expected": "000037.50\n",
+    "setup": null
+  },
+  "everyday-cobol-discount": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Numbers\\everyday-cobol-discount.md",
+    "language": "cobol",
+    "expected": "00085.00\n",
+    "setup": null
+  },
+  "everyday-cobol-tax": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Numbers\\everyday-cobol-tax.md",
+    "language": "cobol",
+    "expected": "00003.09\n",
+    "setup": null
+  },
+  "everyday-cobol-duration": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Dates & Time\\everyday-cobol-duration.md",
+    "language": "cobol",
+    "expected": "00001:01:01\n",
+    "setup": null
+  },
+  "everyday-cobol-leap-year": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Dates & Time\\everyday-cobol-leap-year.md",
+    "language": "cobol",
+    "expected": "leap\n",
+    "setup": null
+  },
+  "everyday-cobol-running-totals": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-running-totals.md",
+    "language": "cobol",
+    "expected": "+000002\n+000001\n+000005\n",
+    "setup": null
+  },
+  "everyday-cobol-minimum-maximum": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-minimum-maximum.md",
+    "language": "cobol",
+    "expected": "-0002,+0007\n",
+    "setup": null
+  },
+  "everyday-cobol-count-matches": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-count-matches.md",
+    "language": "cobol",
+    "expected": "002\n",
+    "setup": null
+  },
+  "everyday-cobol-linear-search": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-linear-search.md",
+    "language": "cobol",
+    "expected": "002\n",
+    "setup": null
+  },
+  "everyday-cobol-reverse-table": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-reverse-table.md",
+    "language": "cobol",
+    "expected": "4321\n",
+    "setup": null
+  },
+  "everyday-cobol-pagination": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Collections\\everyday-cobol-pagination.md",
+    "language": "cobol",
+    "expected": "000020,000023\n",
+    "setup": null
+  },
+  "everyday-cobol-checksum": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Numbers\\everyday-cobol-checksum.md",
+    "language": "cobol",
+    "expected": "0001800\n",
+    "setup": null
+  },
+  "everyday-cobol-business-status": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Validation\\everyday-cobol-business-status.md",
+    "language": "cobol",
+    "expected": "Pending\n",
+    "setup": null
+  },
+  "everyday-cobol-age-band": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Validation\\everyday-cobol-age-band.md",
+    "language": "cobol",
+    "expected": "adult\n",
+    "setup": null
+  },
+  "everyday-cobol-fixed-record": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Data formats\\everyday-cobol-fixed-record.md",
+    "language": "cobol",
+    "expected": "[0042Ada       12345]\n",
+    "setup": null
+  },
+  "everyday-cobol-string-bounds": {
+    "path": "EverydaySnippets\\COBOL\\Everyday\\Strings\\everyday-cobol-string-bounds.md",
+    "language": "cobol",
+    "expected": "overflow\n",
+    "setup": null
+  },
+  "everyday-sql-conditional-totals": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-conditional-totals.md",
+    "language": "sql",
+    "expected": [[1250, 500]],
+    "setup": ""
+  },
+  "everyday-sql-duplicate-keys": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Data quality\\everyday-sql-duplicate-keys.md",
+    "language": "sql",
+    "expected": [["ada@example.test", 2]],
+    "setup": ""
+  },
+  "everyday-sql-latest-per-key": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-latest-per-key.md",
+    "language": "sql",
+    "expected": [
+      [2, 10, "2026-01-02"],
+      [3, 20, "2026-01-01"]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-running-total": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-running-total.md",
+    "language": "sql",
+    "expected": [
+      [1, 200],
+      [2, 100],
+      [3, 500]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-moving-average": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-moving-average.md",
+    "language": "sql",
+    "expected": [
+      [1, 10.0],
+      [2, 15.0],
+      [3, 20.0],
+      [4, 30.0]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-rank-with-ties": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-rank-with-ties.md",
+    "language": "sql",
+    "expected": [
+      ["Ada", 90, 1],
+      ["Linus", 90, 1],
+      ["Grace", 80, 2]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-missing-relations": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Data quality\\everyday-sql-missing-relations.md",
+    "language": "sql",
+    "expected": [[2]],
+    "setup": ""
+  },
+  "everyday-sql-orphan-rows": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Data quality\\everyday-sql-orphan-rows.md",
+    "language": "sql",
+    "expected": [[11, 9]],
+    "setup": ""
+  },
+  "everyday-sql-keyset-page": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Pagination\\everyday-sql-keyset-page.md",
+    "language": "sql",
+    "expected": [
+      [3, "Linus"],
+      [4, "Niklas"]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-group-share": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-group-share.md",
+    "language": "sql",
+    "expected": [
+      ["East", 100, 25.0],
+      ["West", 300, 75.0]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-previous-row": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-previous-row.md",
+    "language": "sql",
+    "expected": [
+      [1, 10, null],
+      [2, 15, 5],
+      [3, 12, -3]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-sequence-gaps": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Data quality\\everyday-sql-sequence-gaps.md",
+    "language": "sql",
+    "expected": [
+      [3, 4],
+      [6, 7]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-reconcile": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-reconcile.md",
+    "language": "sql",
+    "expected": [
+      ["A", 100, 90, -10],
+      ["B", 200, 0, -200],
+      ["C", 0, 50, 50]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-date-buckets": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Reporting\\everyday-sql-date-buckets.md",
+    "language": "sql",
+    "expected": [
+      ["2026-01", 350],
+      ["2026-02", 50]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-safe-ratio": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Numbers\\everyday-sql-safe-ratio.md",
+    "language": "sql",
+    "expected": [
+      [1, 2.5],
+      [2, null],
+      [3, null]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-hierarchy": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Collections\\everyday-sql-hierarchy.md",
+    "language": "sql",
+    "expected": [
+      [1, "Root", 0],
+      [2, "Child", 1],
+      [3, "Leaf", 2]
+    ],
+    "setup": ""
+  },
+  "everyday-sql-get-customer-orders": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Read procedures\\everyday-sql-get-customer-orders.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-stock-adjust": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Write procedures\\everyday-sql-stock-adjust.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-order-status": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Write procedures\\everyday-sql-order-status.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-paged-products": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Read procedures\\everyday-sql-paged-products.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-sales-summary": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Read procedures\\everyday-sql-sales-summary.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-rename-customer": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Write procedures\\everyday-sql-rename-customer.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-archive-events": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Maintenance procedures\\everyday-sql-archive-events.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  },
+  "everyday-sql-transfer-balance": {
+    "path": "EverydaySnippets\\SQL\\Everyday\\Write procedures\\everyday-sql-transfer-balance.md",
+    "language": "sql",
+    "expected": null,
+    "setup": null
+  }
+}
